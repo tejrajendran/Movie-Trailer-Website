@@ -66,7 +66,6 @@ main_page_head = '''
         }
     </style>
     <script type="text/javascript" charset="utf-8">
-        $('#popoverData').popover();
         // Pause the video when the modal is closed
         $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
             // Remove the src so the player itself gets removed, as this is the only
@@ -89,6 +88,7 @@ main_page_head = '''
           $('.movie-tile').hide().first().show("fast", function showNext() {
             $(this).next("div").show("fast", showNext);
           });
+          $('[data-content]').popover();
         });
     </script>
 </head>
@@ -132,7 +132,7 @@ main_page_content = '''
 # A single movie entry html template
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <a id="popoverData" class="btn" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="bottom" data-original-title="Title" data-trigger="hover">
+    <a id="popoverData" class="btn" href="#" data-content="{movie_plot}" rel="popover" data-placement="auto" data-original-title="Movie Description" data-trigger="hover">
     <img src="{poster_image_url}" width="220" height="342">
     <h2>{movie_title}</h2>
     </a>

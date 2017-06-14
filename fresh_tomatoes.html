@@ -60,7 +60,6 @@
         }
     </style>
     <script type="text/javascript" charset="utf-8">
-        $('#popoverData').popover();
         // Pause the video when the modal is closed
         $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
             // Remove the src so the player itself gets removed, as this is the only
@@ -83,6 +82,7 @@
           $('.movie-tile').hide().first().show("fast", function showNext() {
             $(this).next("div").show("fast", showNext);
           });
+          $('[data-content]').popover();
         });
     </script>
 </head>
@@ -114,42 +114,42 @@
     <div class="container">
       
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="KYz2wyBy3kc" data-toggle="modal" data-target="#trailer">
-    <a id="popoverData" class="btn" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="bottom" data-original-title="Title" data-trigger="hover">
+    <a id="popoverData" class="btn" href="#" data-content="Led by Woody, Andy's toys live happily in his room until Andy's birthday brings Buzz Lightyear onto the scene. Afraid of losing his place in Andy's heart, Woody plots against Buzz. But when circumstances separate Buzz and Woody from their owner, the duo eventually learns to put aside their differences." rel="popover" data-placement="auto" data-original-title="Movie Description" data-trigger="hover">
     <img src="https://image.tmdb.org/t/p/w500/rhIRbceoE9lR4veEXuwCC2wARtG.jpg" width="220" height="342">
     <h2>Toy Story</h2>
     </a>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="d1_JBMrrYw8" data-toggle="modal" data-target="#trailer">
-    <a id="popoverData" class="btn" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="bottom" data-original-title="Title" data-trigger="hover">
+    <a id="popoverData" class="btn" href="#" data-content="In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization." rel="popover" data-placement="auto" data-original-title="Movie Description" data-trigger="hover">
     <img src="https://image.tmdb.org/t/p/w500/kmcqlZGaSh20zpTbuoF0Cdn07dT.jpg" width="220" height="342">
     <h2>Avatar</h2>
     </a>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="EXeTwQWrcwY" data-toggle="modal" data-target="#trailer">
-    <a id="popoverData" class="btn" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="bottom" data-original-title="Title" data-trigger="hover">
+    <a id="popoverData" class="btn" href="#" data-content="Following the death of District Attorney Harvey Dent, Batman assumes responsibility for Dent's crimes to protect the late attorney's reputation and is subsequently hunted by the Gotham City Police Department. Eight years later, Batman encounters the mysterious Selina Kyle and the villainous Bane, a new terrorist leader who overwhelms Gotham's finest. The Dark Knight resurfaces to protect a city that has branded him an enemy." rel="popover" data-placement="auto" data-original-title="Movie Description" data-trigger="hover">
     <img src="https://image.tmdb.org/t/p/w500/dEYnvnUfXrqvqeRSqvIEtmzhoA8.jpg" width="220" height="342">
     <h2>The Dark Knight Rises</h2>
     </a>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="wZdpNglLbt8" data-toggle="modal" data-target="#trailer">
-    <a id="popoverData" class="btn" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="bottom" data-original-title="Title" data-trigger="hover">
+    <a id="popoverData" class="btn" href="#" data-content="Nemo, an adventurous young clownfish, is unexpectedly taken from his Great Barrier Reef home to a dentist's office aquarium. It's up to his worrisome father Marlin and a friendly but forgetful fish Dory to bring Nemo home -- meeting vegetarian sharks, surfer dude turtles, hypnotic jellyfish, hungry seagulls, and more along the way." rel="popover" data-placement="auto" data-original-title="Movie Description" data-trigger="hover">
     <img src="https://image.tmdb.org/t/p/w500/syPWyeeqzTQIxjIUaIFI7d0TyEY.jpg" width="220" height="342">
     <h2>Finding Nemo</h2>
     </a>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="1Q8fG0TtVAY" data-toggle="modal" data-target="#trailer">
-    <a id="popoverData" class="btn" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="bottom" data-original-title="Title" data-trigger="hover">
+    <a id="popoverData" class="btn" href="#" data-content="An Amazon princess comes to the world of Man to become the greatest of the female superheroes." rel="popover" data-placement="auto" data-original-title="Movie Description" data-trigger="hover">
     <img src="https://image.tmdb.org/t/p/w500/gfJGlDaHuWimErCr5Ql0I8x9QSy.jpg" width="220" height="342">
     <h2>Wonder Woman</h2>
     </a>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="duGqrYw4usE" data-toggle="modal" data-target="#trailer">
-    <a id="popoverData" class="btn" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="bottom" data-original-title="Title" data-trigger="hover">
+    <a id="popoverData" class="btn" href="#" data-content="The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage." rel="popover" data-placement="auto" data-original-title="Movie Description" data-trigger="hover">
     <img src="https://image.tmdb.org/t/p/w500/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg" width="220" height="342">
     <h2>Guardians of the Galaxy Vol. 2</h2>
     </a>
