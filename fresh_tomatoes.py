@@ -38,18 +38,10 @@ main_page_head = '''
         .movie-tile {
             margin-bottom: 20px;
             padding-top: 20px;
-            
-            #popup {
-                display:none;
-            }
         }
         .movie-tile:hover {
             background-color: #EEE;
             cursor: pointer;
-            
-            #popup{
-                display:block;
-            }
         }
         .scale-media {
             padding-bottom: 56.25%;
@@ -88,6 +80,7 @@ main_page_head = '''
           $('.movie-tile').hide().first().show("fast", function showNext() {
             $(this).next("div").show("fast", showNext);
           });
+          //bootstrap popover triggered on hover 
           $('[data-content]').popover();
         });
     </script>
