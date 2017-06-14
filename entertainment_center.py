@@ -12,7 +12,7 @@ nemo_data = json.loads(urllib.urlopen('https://api.themoviedb.org/3/movie/12?api
 wonder_woman_data = json.loads(urllib.urlopen('https://api.themoviedb.org/3/movie/297762?api_key=5d5127ef839b750c40642786f6692867').read())
 guardians_data = json.loads(urllib.urlopen('https://api.themoviedb.org/3/movie/283995?api_key=5d5127ef839b750c40642786f6692867').read())
 
-#create media instances from each movie with respective data
+# Create media instances from each movie with respective data
 toy_story = media.Movie(toy_story_data['title'],
                         toy_story_data['overview'],
                      "https://image.tmdb.org/t/p/w500" + toy_story_data['poster_path'],
@@ -44,6 +44,6 @@ guardians = media.Movie(guardians_data['title'],
                      "https://image.tmdb.org/t/p/w500" + guardians_data['poster_path'],
                         "https://www.youtube.com/watch?v=duGqrYw4usE")
 
-#Create movies array to load onto fresh_tomatoes movie page
+# Create movies array to load onto fresh_tomatoes movie page
 movies = [toy_story,avatar,batman,nemo, wonder_woman, guardians]
 fresh_tomatoes.open_movies_page(movies)
